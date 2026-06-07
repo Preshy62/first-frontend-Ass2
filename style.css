@@ -1,0 +1,224 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.7;
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header h3{
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* GENERAL SECTIONS */
+section{
+    max-width:1200px;
+    margin:50px auto;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+section h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+    position:relative;
+}
+
+section h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background:#2563eb;
+    display:block;
+    margin-top:8px;
+    border-radius:10px;
+}
+
+/* HERO */
+#home table{
+    width:100%;
+}
+
+#home img{
+    width:260px;
+    border-radius:50%;
+    border:5px solid #2563eb;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+#home h2{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+#home p{
+    margin-bottom:15px;
+}
+
+/* ABOUT */
+#about p{
+    margin-bottom:15px;
+}
+
+/* SKILLS */
+#skills ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    list-style:none;
+}
+
+#skills li{
+    background:#eff6ff;
+    padding:15px;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+#skills li:hover{
+    transform:translateY(-5px);
+    background:#dbeafe;
+}
+
+/* EXPERIENCE */
+article{
+    margin-bottom:30px;
+    padding:20px;
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+}
+
+article h3{
+    color:#1e40af;
+    margin-bottom:10px;
+}
+
+article ul{
+    padding-left:20px;
+}
+
+/* PROJECT TABLE */
+#projects table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+#projects th{
+    background:#1e3a8a;
+    color:white;
+    padding:15px;
+}
+
+#projects td{
+    padding:15px;
+}
+
+#projects tr:nth-child(even){
+    background:#f1f5f9;
+}
+
+#projects tr:hover{
+    background:#dbeafe;
+}
+
+/* CONTACT */
+#contact p{
+    margin-bottom:10px;
+    font-size:1.05rem;
+}
+
+#contact strong{
+    color:#1e3a8a;
+}
+
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* HR */
+hr{
+    border:none;
+    height:1px;
+    background:#e2e8f0;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    #home table,
+    #home tr,
+    #home td{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+
+    #home img{
+        margin-top:20px;
+        width:200px;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+    }
+
+    section{
+        margin:20px;
+        padding:20px;
+    }
+}
